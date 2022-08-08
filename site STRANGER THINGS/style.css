@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding:0;
+    font-family: 'Changa', sans-serif !important;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    font-weight: 700;
+    will-change: color;
+    transition: color .4s;
+}
+
+nav a:hover {
+    color:white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+nav li {
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+/*#div-background {
+    color: transparent;
+    background-image: url(./imagens/fundo.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    background-attachment: fixed;
+}*/
+
+.main-sections {
+    background-color: black;
+    padding: 50px;
+}
+
+#personagens {
+    padding: 0;
+}
+
+#temporadas {
+    padding-top: 0;
+}
+
+div a {
+    text-decoration: none;
+}
+
+section h1 {
+    color: red;
+    font-weight: 600;
+    text-align: center;
+}
+
+main p {
+    color: white;
+    text-align: justify;
+}
+
+.img-personagens {
+    width: 300px;
+}
+
+#cards {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.div-personagens {
+    background-color: black;
+    margin-bottom: 50px;
+    padding: 10px;
+    transition: transform .5s;
+    will-change: scale;
+}
+
+.div-personagens:hover {
+    background-color: red;
+    transform: scale(1.08);
+}
+
+.div-personagens:hover h3 {
+    color: black;
+    font-weight: bold;
+}
+
+div h3 {
+    color: red;
+    margin-top: 10px;
+}
+
+div h4 {
+    color: white
+}
+
+.div-personagens:hover h4 {
+    color: black;
+}
+
+#cards-temporadas {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+#temporada1 {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
+    url(./imagens/Posters/Temporada-1.jpg);
+}
+
+#temporada2 {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
+    url(./imagens/Posters/Temporada-2.jpg);
+}
+
+#temporada3 {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
+    url(./imagens/Posters/Temporada-3.jpg);
+}
+
+#temporada4 {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
+    url(./imagens/Posters/Temporada-4.jpg);
+}
+
+.div-temporadas {
+    margin: 30px;
+    width: 250px;
+    height: 370px;;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s;
+    will-change: scale;
+}
+
+.div-temporadas:hover {
+    transform: scale(1.2);
+}
+
+.h1-temporadas {
+    font-size: 70px;
+    background-color: black;
+    margin-bottom: 0;
+    padding: 1px 92px 1px 92px;
+}
+
+.h2-temporadas {
+    color: white;
+    background-color: black;
+    margin-bottom: 0;
+    padding: 1px 47px 1px 47px;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: red;
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(red, black, black, black, black, black);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h6 {
+    margin: 20px;
+}
+
+.redes-sociais {
+    width: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+footer div .fa-brands {
+    font-size: 25px;
+    color: red;
+    margin: 15px;
+    border: 3px solid red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+footer div .fa-brands:hover {
+    color: black;
+    border: 3px solid red;
+    background-color: red;
+}
+
+/*#main-temporada1 {
+    background-image: url(../stranger-things/imagens/Posters/Temporada-1.jpg);
+}
+
+.main-temporadas {
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}*/
+
+.color-red {
+    color: red;
+}
+
+.main-temporadas {
+    padding: 57px 0 100px 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    color: white;
+    background-color: red;
+    font-size: 8vh;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.img-ilustrativa {
+    padding: 0 20% 0 20%;
+}
+
+.res-temp {
+    margin: 45px 8% 70px 8%;
+}
+
+.section-temporadas {
+    margin: 0 15% 0 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cap-temp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-temp {
+    width: 270px;
+    height: 400px;
+    border: 5px solid red;
+}
