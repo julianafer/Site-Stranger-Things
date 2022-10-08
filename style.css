@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: 'Changa', sans-serif !important;
     overflow-x: hidden;
 }
@@ -30,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-    color:white;
+    color: white;
 }
 
 nav ul {
@@ -111,7 +111,7 @@ main p {
 }
 
 .div-personagens:hover h3 {
-    color: black;
+    color: black !important;
     font-weight: bold;
 }
 
@@ -139,28 +139,29 @@ div h4 {
 
 #temporada1 {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
-    url(./imagens/Posters/Temporada-1.jpg);
+        url(./imagens/Posters/Temporada-1.jpg);
 }
 
 #temporada2 {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
-    url(./imagens/Posters/Temporada-2.jpg);
+        url(./imagens/Posters/Temporada-2.jpg);
 }
 
 #temporada3 {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
-    url(./imagens/Posters/Temporada-3.jpg);
+        url(./imagens/Posters/Temporada-3.jpg);
 }
 
 #temporada4 {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
-    url(./imagens/Posters/Temporada-4.jpg);
+        url(./imagens/Posters/Temporada-4.jpg);
 }
 
 .div-temporadas {
     margin: 30px;
     width: 250px;
-    height: 370px;;
+    height: 370px;
+    ;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
@@ -228,6 +229,7 @@ footer div .fa-brands {
     justify-content: center;
     align-content: center;
 }
+
 footer div .fa-brands:hover {
     color: black;
     border: 3px solid red;
@@ -296,4 +298,35 @@ footer div .fa-brands:hover {
     width: 270px;
     height: 400px;
     border: 5px solid red;
+}
+
+/*PARTE DO RESPONSIVE*/
+@media (max-width: 1077px) {
+    .capitulos1 {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1138px) {
+    .capitulos2 {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 997px) {
+    .capitulos3 {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1189px) {
+    .capitulos4 {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 653px) {
+    .capitulos-temp1 {
+        display: flex;
+    }
 }
