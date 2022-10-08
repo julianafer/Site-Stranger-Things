@@ -27,9 +27,11 @@
         </nav>
     </header>
     <main class="main-temporadas">
-        <!-- <h1 class="titulo">Temporada 1</h1>
-        <img class="img-ilustrativa" src="../imagens/Temporadas/1.webp"> -->
-        <img class="img-ilustrativa" src="../imagens/Temporadas/Temporda-1.png">
+        <picture>
+            <source media="print" srcset="../imagens/Temporadas/Temporada-1.png">
+            <source media="(max-width: 600px)" srcset="../imagens/Temporadas/1temporada_500px.png">
+            <img class="img-ilustrativa w-100" src="../imagens/Temporadas/Temporada-1.png" alt="Temporada 1">
+        </picture>
         <div class="res-temp">
             <h1 class="mb-5 text-center color-red">Resumo</h1>
             <p class="text-justify">O início da série se passa em 1983, em Hawkins, Indiana. O jovem Will Byers (Noah
@@ -50,7 +52,7 @@
             <div>
                 <h1 class="capitulos1 mb-5">Capítulos</h1>
                 <div class="cap-temp" id='cap-temp'>
-
+                    <!-- parte do js -->
                 </div>
             </div>
         </section>

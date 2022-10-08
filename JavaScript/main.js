@@ -4,7 +4,7 @@ function createCapitulos(capitulos) {
     return `<div class="capitulos-temp1">
         <h4>Capítulo ${capitulos.numero}:</h4>
         <h4 class="ms-1 color-red">${capitulos.titulo}</h4>
-    </div>>`
+    </div>`
 }
 
 const capitulosContent = capitulos

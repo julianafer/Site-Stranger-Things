@@ -45,21 +45,19 @@ nav li {
     margin-left: 32px;
 }
 
-/*#div-background {
-    color: transparent;
-    background-image: url(./imagens/fundo.jpg);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
-    background-attachment: fixed;
-}*/
+/* #imagem-principal {
+    position: fixed;
+    z-index: -1;
+} */
 
 .main-sections {
     background-color: black;
     padding: 50px;
 }
+
+/* #sobre {
+    margin-top: 100%;
+} */
 
 #personagens {
     padding: 0;
@@ -236,17 +234,6 @@ footer div .fa-brands:hover {
     background-color: red;
 }
 
-/*#main-temporada1 {
-    background-image: url(../stranger-things/imagens/Posters/Temporada-1.jpg);
-}
-
-.main-temporadas {
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
-}*/
-
 .color-red {
     color: red;
 }
@@ -272,6 +259,7 @@ footer div .fa-brands:hover {
 .img-ilustrativa {
     /* padding: 0 20% 0 20%; */
     margin: 12% 0 12% 0;
+    width: 100%;
 }
 
 .res-temp {
@@ -300,7 +288,6 @@ footer div .fa-brands:hover {
     border: 5px solid red;
 }
 
-/*PARTE DO RESPONSIVE*/
 @media (max-width: 1077px) {
     .capitulos1 {
         margin-top: 80px;
@@ -327,6 +314,24 @@ footer div .fa-brands:hover {
 
 @media (min-width: 653px) {
     .capitulos-temp1 {
+        display: flex;
+    }
+}
+
+@media (min-width: 713px) {
+    .capitulos-temp2 {
+        display: flex;
+    }
+}
+
+@media (min-width: 579px) {
+    .capitulos-temp3 {
+        display: flex;
+    }
+}
+
+@media (min-width: 761px) {
+    .capitulos-temp4 {
         display: flex;
     }
 }
