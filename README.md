@@ -1,6 +1,6 @@
 # Site Stranger Things
 ```
-Projeto final da disciplina de Linsguagens de Script
+Projeto final da disciplina de Linguagens de Script
 ```
  Site baseado na série **Stranger Things** da Netflix.
  
