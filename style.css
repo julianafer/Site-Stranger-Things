@@ -83,6 +83,20 @@ nav li {
     padding: 50px;
 }
 
+/* #sobre {
+    width: 53%;
+    padding-right: 0px;
+}
+
+#carrossel {
+    color: black;
+    background-color: red;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+    width: 50%;
+} */
+
 #personagens {
     padding: 0;
 }
@@ -182,7 +196,6 @@ div h4 {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
         url(./imagens/Posters/Temporada-4.jpg);
 }
-
 .div-temporadas {
     margin: 30px;
     width: 250px;
@@ -292,6 +305,18 @@ footer div .fa-brands:hover {
 
 .res-temp {
     margin: 45px 8% 70px 8%;
+    /* width: 50%;
+}
+
+.trailer {
+    text-align: center;
+    margin-right: 8%;
+    margin-top: 45px;
+}
+
+.resumo-trailer {
+    flex-direction: row;
+    justify-content: center; */
 }
 
 .section-temporadas {
