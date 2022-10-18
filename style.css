@@ -79,8 +79,32 @@ nav li {
 }
 
 .main-sections {
-    background-color: black;
     padding: 50px;
+}
+
+#infos {
+    width: 342vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 50px;
+    margin-left: 0;
+    border: 5px solid red;
+    background-image: linear-gradient(red, black, black, black, black, black, red);
+}
+
+#infos * {
+    background-color: transparent;
+    color: white;
+    font-size: .9rem;
+}
+
+#div1-infos {
+    text-align: end;
+}
+
+#div2-infos {
+    padding-left: 20px;
 }
 
 /* #sobre {
@@ -295,6 +319,7 @@ div h4 {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
         url(./imagens/Posters/Temporada-4.jpg);
 }
+
 .div-temporadas {
     margin: 30px;
     width: 250px;
@@ -438,6 +463,20 @@ footer div .fa-brands:hover {
     width: 270px;
     height: 400px;
     border: 5px solid red;
+}
+
+@media (max-width: 1000px) {
+    #sobre-infos {
+        flex-direction: column;
+    }
+
+    #infos {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        margin: 50px;
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 550px) {
