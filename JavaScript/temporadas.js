@@ -161,7 +161,61 @@ const temporadas = [
         ]
     },
     {
-
+        id: 4,
+        nome: "Temporada 4",
+        resumo: '<p class=\"text-justify\">Essa temporada está dividada em três locações: Hawkins, Califórnia e União Soviética</p><p class=\"text-justify\">Joyce recebe uma mensagem de Hopper e vai com o Murray até a Rússia para tentar resgatar o Hopper, que eles descobrem estar vivo. Enqaunto isso o Hopper está tentando fugir da prisão com a ajuda do Enzo. Quando eles se encontram eles montam um plano para matar todos Demogorgons da prisão para enfraquecer os monstros do mundo invertido e ajudar a galera de Hawkins.</p><p class=\"text-justify\">Dustin, Lucas e Erica se unem com Nancy, Steve e Robin para protegerem a Max, que está sendo perseguida pelo Vecna, e o Eddie que está foragido da polícia suspeito do "assassinato" de Chrissy. E juntos eles armam um plano para derrotar o Vecna.</p><p class=\"text-justify\">Na Califórnia, Mike vai visitar a Onze no feriado mas seus planos foram interrompidos quando ela foi presa por agressão mas logo foi resgatada pelo Sam Owens para recuperar seus poderes através do Projeto Nina, e assim ajudar seus amigos de Hawkins a derrotar o Vecna. Mike, Will, Jonathan e Argyle (melhor amigo de Jonathan) estão a procura de Eleven sem saber onde ela está.</p>',
+        imagem: {
+            print: "../imagens/Temporadas/Temporada-4.png",
+            mobile: "../imagens/Temporadas/4temporada_500px.png",
+            poster: "../imagens/Posters/Temporada-4.jpg"
+        },
+        capitulos: [
+            {
+                temporada: '4',
+                numero: 'um',
+                titulo: 'O Clube Hellfire'
+            },
+            {
+                temporada: '4',
+                numero: 'dois',
+                titulo: 'A maldição de Vecna'
+            },
+            {
+                temporada: '4',
+                numero: 'três',
+                titulo: 'O monstro e a super-heroína'
+            },
+            {
+                temporada: '4',
+                numero: 'quatro',
+                titulo: 'Querido Billy'
+            },
+            {
+                temporada: '4',
+                numero: 'cinco',
+                titulo: 'Projeto Nina'
+            },
+            {
+                temporada: '4',
+                numero: 'seis',
+                titulo: 'Mergulho'
+            },
+            {
+                temporada: '4',
+                numero: 'sete',
+                titulo: 'O massacre no laboratório de Hawkins'
+            },
+            {
+                temporada: '4',
+                numero: 'oito',
+                titulo: 'Papai'
+            },
+            {
+                temporada: '4',
+                numero: 'nove',
+                titulo: 'E o plano de Onze'
+            }
+        ]
     }
 ]
 
