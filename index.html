@@ -13,13 +13,13 @@
     <script src="https://kit.fontawesome.com/ce231a28c8.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="m-0 p-0">
     <header>
-        <nav>
+        <nav class="position-fixed d-flex justify-content-around align-items-center">
             <a href="#">
                 <img src="./imagens/stranger_things.png" alt="Logo de Stranger Things">
             </a>
-            <div class="mobile-menu">
+            <div class="mobile-menu d-none">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -39,7 +39,7 @@
     </header>
     <main>
         <!-- <img id="imagem-principal" class="background-image w-100" src="./imagens/fundo.jpg"> -->
-        <div class="background">
+        <div class="background text-center">
             Texto invisível
         </div>
         <div id="sobre-infos" class="d-flex">
@@ -59,7 +59,7 @@
                     mãe Joyce Byers (Winona Ryder) está determinada e fará o impossível para rever o filho.
                 </p>
             </section>
-            <section id="infos" class="d-flex main-sections">
+            <!-- <section id="infos" class="d-flex main-sections">
                 <div id="div1-infos">
                     <h5 class="mb-3">Formato</h5>
                     <h5 class="mt-3 mb-3">Gênero</h5>
@@ -76,10 +76,10 @@
                     <h5 class="mt-3 mb-3">Inglês</h5>
                     <h5 class="mt-3 mb-0">Netflix</h5>
                 </div>
-            </section>
+            </section> -->
         </div>
+        <h1 id="h1-noticias">Notícias</h1>
         <section id="carrossel" class="main-sections">
-            <h1> Notícias </h1>
             <div class="slider">
                 <div class="slides">
                     <!-- botões -->
@@ -123,9 +123,9 @@
 
             </div>
         </section>
-        <section id="personagens" class="main-sections">
+        <section id="personagens" class="main-sections p-0">
             <h1>Personagens</h1>
-            <section id="cards" class="main-sections">
+            <section id="cards" class="main-sections d-flex text-center flex-row flex-wrap justify-content-around align-content-around">
                 <div class="div-personagens">
                     <a
                         href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Onze+(Stranger+Things)&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMLjYtNDRLNteSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaxi_nlVqQoawSVFiXnpqUUKIRmZeenFmjtYGQGRUN0OWAAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAF">
@@ -262,16 +262,16 @@
                 </div>
             </section>
         </section>
-        <section id="temporadas" class="main-sections">
+        <section id="temporadas" class="main-sections pt-0">
             <h1 class="mb-5">Temporadas</h1>
-            <section id="cards-temporadas" class="cards-temporadas">
+            <section class="cards-temporadas d-flex text-center flex-row flex-wrap justify-content-around align-content-around">
                 <!-- parte do js -->
             </section>
         </section>
     </main>
-    <footer>
+    <footer class="d-flex flex-column text-center align-items-center justify-content-center">
         <h6>Juliana F. & Ricardo Luiz D. &copy; 2022</h6>
-        <div class="redes-sociais">
+        <div class="redes-sociais d-flex flex-row justify-content-around">
             <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
