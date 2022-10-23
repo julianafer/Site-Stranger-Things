@@ -15,11 +15,11 @@
 
 <body class="m-0 p-0">
     <header>
-        <nav class="position-fixed d-flex justify-content-around align-items-center">
+        <nav>
             <a href="#">
                 <img src="./imagens/stranger_things.png" alt="Logo de Stranger Things">
             </a>
-            <div class="mobile-menu d-none">
+            <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -27,6 +27,9 @@
             <ul class="nav-list">
                 <li>
                     <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#h1-noticias">Notícias</a>
                 </li>
                 <li>
                     <a href="#personagens">Personagens</a>
@@ -59,26 +62,8 @@
                     mãe Joyce Byers (Winona Ryder) está determinada e fará o impossível para rever o filho.
                 </p>
             </section>
-            <!-- <section id="infos" class="d-flex main-sections">
-                <div id="div1-infos">
-                    <h5 class="mb-3">Formato</h5>
-                    <h5 class="mt-3 mb-3">Gênero</h5>
-                    <h5 class="mt-3 mb-3">Criadores</h5>
-                    <h5 class="mt-3 mb-3">País de origem</h5>
-                    <h5 class="mt-3 mb-3">Idioma original</h5>
-                    <h5 class="mt-3 mb-0">Distribuição</h5>
-                </div>
-                <div id="div2-infos">
-                    <h5 class="mb-3">Série</h5>
-                    <h5 class="mt-3 mb-3">Ficção científica</h5>
-                    <h5 class="mt-3 mb-3">Os irmãos Duffer</h5>
-                    <h5 class="mt-3 mb-3">Estados Unidos</h5>
-                    <h5 class="mt-3 mb-3">Inglês</h5>
-                    <h5 class="mt-3 mb-0">Netflix</h5>
-                </div>
-            </section> -->
         </div>
-        <h1 id="h1-noticias">Notícias</h1>
+        <h1 id="h1-noticias" class="mb-0">Notícias</h1>
         <section id="carrossel" class="main-sections">
             <div class="slider">
                 <div class="slides">
@@ -266,6 +251,31 @@
             <h1 class="mb-5">Temporadas</h1>
             <section class="cards-temporadas d-flex text-center flex-row flex-wrap justify-content-around align-content-around">
                 <!-- parte do js -->
+                <a onclick="temporadaId(1)" class="text-decoration-none" href="html/temporadas.html?temporadaId=${temporadaId}">
+                    <div id="temporada1" class="div-temporadas d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="h1-temporadas mb-0">1ª</h1>
+                        <h2 class="h2-temporadas mb-0">Temporada</h2>
+                    </div>
+                </a>
+                <a onclick="temporadaId(2)" class="text-decoration-none" href="html/temporadas.html?temporadaId=${temporadaId}">
+                    <div id="temporada2" class="div-temporadas d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="h1-temporadas mb-0">2ª</h1>
+                        <h2 class="h2-temporadas mb-0">Temporada</h2>
+                    </div>
+                </a>
+                <a onclick="temporadaId(3)" class="text-decoration-none" href="html/temporadas.html?temporadaId=${temporadaId}">
+                    <div id="temporada3" class="div-temporadas d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="h1-temporadas mb-0">3ª</h1>
+                        <h2 class="h2-temporadas mb-0">Temporada</h2>
+                    </div>
+                </a>
+                <a onclick="temporadaId(4)" class="text-decoration-none" href="html/temporadas.html?temporadaId=${temporadaId}">
+                    <div id="temporada4" class="div-temporadas d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="h1-temporadas mb-0">4ª</h1>
+                        <h2 class="h2-temporadas mb-0">Temporada</h2>
+                    </div>
+                </a>
+                <!-- parte do js -->
             </section>
         </section>
     </main>
@@ -282,7 +292,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="JavaScript/mobile-navbar.js"></script>
-    <script src="JavaScript/cards-temporadas.js"></script>
+    <!-- <script src="JavaScript/cards-temporadas.js"></script> -->
     <script src="JavaScript/carrossel.js"></script>
 </body>
 
