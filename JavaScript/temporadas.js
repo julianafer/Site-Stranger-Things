@@ -1,4 +1,4 @@
-import temporadas from "./model";
+import * as temporadasSettings from "./model.js";
 
 // function getId(id) {
 //     element.id = idStr;
@@ -8,7 +8,7 @@ const params = new URLSearchParams(window.location.search)
 
 const temporadaId = params.get('temporada') ?? 1;
 
-const temporada = temporadas.find((temporada) => temporada.id == temporadaId);
+const temporada = temporadasSettings.find((temporada) => temporada.id == temporadaId);
 
 document.title = temporada.nome;
 

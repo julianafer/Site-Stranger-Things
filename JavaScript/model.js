@@ -1,4 +1,4 @@
-const temporadas = [
+export const temporadasSettings = [
     {
         id: 1,
         nome: "Temporada 1",
@@ -217,6 +217,4 @@ const temporadas = [
             }
         ]
     }
-]
-
-export default temporadas;
+];
