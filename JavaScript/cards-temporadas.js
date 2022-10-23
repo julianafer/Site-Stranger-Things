@@ -15,9 +15,9 @@ const temporadas = [
 
 function createTemporadas(temporadas) {
     return `<a class="text-decoration-none" href="html/temporada${temporadas.temporada}.html">
-        <div id="temporada${temporadas.temporada}" class="div-temporadas">
-            <h1 class="h1-temporadas">${temporadas.temporada}ª</h1>
-            <h2 class="h2-temporadas">Temporadas</h2>
+        <div id="temporada${temporadas.temporada}" class="div-temporadas d-flex flex-column justify-content-center align-items-center">
+            <h1 class="h1-temporadas mb-0">${temporadas.temporada}ª</h1>
+            <h2 class="h2-temporadas mb-0">Temporadas</h2>
         </div>
     </a>`
 }

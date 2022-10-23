@@ -5,19 +5,16 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Changa', sans-serif !important;
     overflow-x: hidden;
 }
 
 nav {
-    background-color: black;
     position: fixed;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     z-index: 2;
 }
 
@@ -50,8 +47,8 @@ nav li {
 }
 
 .mobile-menu {
-    cursor: pointer;
     display: none;
+    cursor: pointer;
 }
 
 .mobile-menu div {
@@ -62,7 +59,6 @@ nav li {
 }
 
 .background {
-    text-align: center;
     color: transparent;
     padding: 24% 0 24% 0;
     background-image: url(imagens/fundo.jpg);
@@ -82,74 +78,42 @@ nav li {
     padding: 50px;
 }
 
-#infos {
-    width: 342vh;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 50px;
-    margin-left: 0;
-    border: 5px solid red;
-    background-image: linear-gradient(red, black, black, black, black, black, red);
-}
-
-#infos * {
-    background-color: transparent;
-    color: white;
-    font-size: .9rem;
-}
-
-#div1-infos {
-    text-align: end;
-}
-
-#div2-infos {
-    padding-left: 20px;
-}
-
-/* #sobre {
-    width: 53%;
-    padding-right: 0px;
-}
-
+/* === Parte do carrossel === */
 #carrossel {
-    color: black;
-    background-color: red;
-    font-size: 50px;
-    text-align: center;
-    margin: 50px;
-    width: 50%;
-} */
+    padding-top: 20px;
+}
 
-.slider{
-    margin:0 auto;
+.slider {
+    margin: 0 auto;
     width: 630px;
     height: 380px;
     overflow: hidden;
+    border: 5px solid red;
 }
 
-.slides{
+.slides {
     width: 630px;
     height: 380px;
     display: flex;
 }
-.slides input{
+
+.slides input {
     display: none;
     background-color: transparent;
 }
 
-.slide{
-    width: 100%; 
+.slide {
+    width: 100%;
     position: relative;
     transition: 2s;
 }
 
-.slide img{
-    width :630px;
+.slide img {
+    width: 630px;
     height: 380px;
 }
 
-.manual-navigation{
+.manual-navigation {
     position: absolute;
     width: 630px;
     margin-top: -40px;
@@ -157,38 +121,42 @@ nav li {
     justify-content: center;
     background-color: transparent;
 }
-.manual-btn{
-    border: 2.5px solid  white;
+
+.manual-btn {
+    border: 2.5px solid white;
     padding: 7px;
-    border-radius:10px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 1s;
     background-color: transparent;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background-color: red;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
     margin-left: 0%;
 }
-#radio2:checked ~ .first{
+
+#radio2:checked~.first {
     margin-left: -100%;
 }
-#radio3:checked ~ .first{
+
+#radio3:checked~.first {
     margin-left: -200%;
 }
-#radio4:checked ~ .first{
+
+#radio4:checked~.first {
     margin-left: -300%;
 }
 
-.navigation-auto div{
-    border:2px solid rgb(255, 217, 0);
+.navigation-auto div {
+    border: 2px solid rgb(255, 217, 0);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -196,44 +164,40 @@ nav li {
     
 }
 
-.navigaton-auto{
-    position:absolute;
+.navigaton-auto {
+    position: absolute;
     width: 630px;
     margin-top: 360px;
     display: flex;
     justify-content: center;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
-#radio1:checked ~ .navigation-auto .auto-btn1{
+
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: #fff;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: white;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: white;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
+
+#radio2:checked~.navigation-auto .auto-btn2 {
     background-color: white;
 }
 
-
-#personagens {
-    padding: 0;
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: white;
 }
 
-#temporadas {
-    padding-top: 0;
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: white;
 }
+/* === Fim da parte do carrossel === */
 
 div a {
     text-decoration: none;
 }
 
-section h1 {
+section h1, #h1-noticias {
     color: red;
     font-weight: 600;
     text-align: center;
@@ -271,17 +235,7 @@ main p {
     width: 300px;
 }
 
-#cards {
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
 .div-personagens {
-    background-color: black;
     margin-bottom: 50px;
     padding: 10px;
     transition: transform .5s;
@@ -315,15 +269,6 @@ div h4 {
     background-color: red;
 }
 
-#cards-temporadas {
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
 #temporada1 {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 50%, transparent),
         url(./imagens/Posters/Temporada-1.jpg);
@@ -348,14 +293,9 @@ div h4 {
     margin: 30px;
     width: 250px;
     height: 370px;
-    ;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     transition: transform .5s;
     will-change: scale;
 }
@@ -366,15 +306,11 @@ div h4 {
 
 .h1-temporadas {
     font-size: 70px;
-    background-color: black;
-    margin-bottom: 0;
     padding: 1px 92px 1px 92px;
 }
 
 .h2-temporadas {
     color: white;
-    background-color: black;
-    margin-bottom: 0;
     padding: 1px 47px 1px 47px;
 }
 
@@ -385,11 +321,6 @@ footer {
     width: 100%;
     height: 250px;
     background-image: linear-gradient(red, black, black, black, black, black);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
 footer h6 {
@@ -398,10 +329,6 @@ footer h6 {
 
 .redes-sociais {
     width: 50vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: space-around;
 }
 
 footer div .fa-brands {
@@ -429,11 +356,6 @@ footer div .fa-brands:hover {
 
 .main-temporadas {
     padding: 57px 0 100px 0;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
 }
 
 .titulo {
@@ -449,22 +371,6 @@ footer div .fa-brands:hover {
     /* padding: 0 20% 0 20%; */
     margin: 12% 0 12% 0;
     width: 100%;
-}
-
-.res-temp {
-    margin: 45px 8% 70px 8%;
-    /* width: 50%;
-}
-
-.trailer {
-    text-align: center;
-    margin-right: 8%;
-    margin-top: 45px;
-}
-
-.resumo-trailer {
-    flex-direction: row;
-    justify-content: center; */
 }
 
 .section-temporadas {
@@ -489,21 +395,11 @@ footer div .fa-brands:hover {
     border: 5px solid red;
 }
 
-@media (max-width: 1000px) {
-    #sobre-infos {
-        flex-direction: column;
+@media (max-width: 650px) {
+    .mobile-menu {
+        display: block;
     }
 
-    #infos {
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
-        margin: 50px;
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 550px) {
     .background {
         background-image: url(imagens/fundo-celular.jpg);
         padding: 40% 0 40% 0;
@@ -526,10 +422,6 @@ footer div .fa-brands:hover {
 
     .nav-list li {
         margin: 0;
-    }
-
-    .mobile-menu {
-        display: block;
     }
 }
 

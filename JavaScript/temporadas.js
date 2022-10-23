@@ -1,5 +1,9 @@
 import temporadas from "./model";
 
+// function getId(id) {
+//     element.id = idStr;
+// }
+
 const params = new URLSearchParams(window.location.search)
 
 const temporadaId = params.get('temporada') ?? 1;
