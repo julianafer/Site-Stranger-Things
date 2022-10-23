@@ -28,7 +28,7 @@
                 <li>
                     <a href="#sobre">Sobre</a>
                 </li>
-                <li>
+                <li id="li-noticias">
                     <a href="#h1-noticias">Notícias</a>
                 </li>
                 <li>
@@ -46,7 +46,7 @@
             Texto invisível
         </div>
         <div id="sobre-infos" class="d-flex">
-            <section id="sobre" class="main-sections">
+            <section id="sobre" class="main-sections pb-0">
                 <h1>Sobre</h1>
                 <p>Situada no início dos anos 1980, Stranger Things se passa na cidade rural fictícia de Hawkins,
                     Indiana. Como fachada, o laboratório da região realizava experimentos científicos para o
@@ -64,7 +64,7 @@
             </section>
         </div>
         <h1 id="h1-noticias" class="mb-0">Notícias</h1>
-        <section id="carrossel" class="main-sections">
+        <section id="carrossel" class="main-sections pb-0">
             <div class="slider">
                 <div class="slides">
                     <!-- botões -->
@@ -109,7 +109,7 @@
             </div>
         </section>
         <section id="personagens" class="main-sections p-0">
-            <h1>Personagens</h1>
+            <h1 id="h1-personagens">Personagens</h1>
             
             <label for="exampleDataList" class="form-label">Procure pelo seu personagem favorito aqui:</label>
             <div class="submit">
@@ -121,9 +121,9 @@
                          <option value="Los Angeles">
                          <option value="Chicago">
                     </datalist>
-                    <button type="button" class="btn btn-secondary">Submit</button>
+                    <button id="submit" type="button" class="btn">Submit</button>
             </div>
-            <section id="cards" class="main-sections d-flex text-center flex-row flex-wrap justify-content-around align-content-around">
+            <section id="cards" class="main-sections d-flex text-center flex-row flex-wrap justify-content-around align-content-around pb-0">
                 <div class="div-personagens">
                     <a
                         href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Onze+(Stranger+Things)&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMLjYtNDRLNteSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaxi_nlVqQoawSVFiXnpqUUKIRmZeenFmjtYGQGRUN0OWAAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAF">
@@ -261,7 +261,7 @@
             </section>
         </section>
         <section id="temporadas" class="main-sections pt-0">
-            <h1 class="mb-5">Temporadas</h1>
+            <h1 id="h1-temporadas" class="mb-5">Temporadas</h1>
             <section class="cards-temporadas d-flex text-center flex-row flex-wrap justify-content-around align-content-around">
                 <!-- parte do js -->
                 <a onclick="temporadaId(1)" class="text-decoration-none" href="html/temporadas.html?temporadaId=${temporadaId}">
