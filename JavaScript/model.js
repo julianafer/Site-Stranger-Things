@@ -1,4 +1,4 @@
-export const temporadasSettings = [
+const temporadasSettings = [
     {
         id: 1,
         nome: "Temporada 1",
@@ -218,3 +218,5 @@ export const temporadasSettings = [
         ]
     }
 ];
+
+export default temporadasSettings;

@@ -245,6 +245,7 @@ main p {
     border:rgb(26, 25, 25);
     color: red;
 }
+
 #btn-secondary {
     --bs-btn-color: #fff;
     --bs-btn-bg: red;
@@ -388,6 +389,10 @@ footer div .fa-brands:hover {
 
 .main-temporadas {
     padding: 57px 0 100px 0;
+}
+
+.res-temp {
+    padding: 80px;
 }
 
 .titulo {
