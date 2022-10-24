@@ -156,8 +156,14 @@ nav li {
 }
 
 .navigation-auto div {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: transparent;
+    right: 545px;
+    top: 1410px;
     border: 2px solid rgb(255, 217, 0);
-    padding: 5px;
+    padding: 7px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
@@ -242,6 +248,7 @@ main p {
 #btn-secondary {
     --bs-btn-color: #fff;
     --bs-btn-bg: red;
+    --bs-btn-border-color: red;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #8b0000;
     --bs-btn-hover-border-color: #8b0000;
