@@ -21,5 +21,4 @@ const personagens = [
         n_ator: 'Noah Schnapp',
     }
 ]
-
-export default personagens
+export defult personagens
