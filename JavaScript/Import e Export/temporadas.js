@@ -34,7 +34,7 @@ document.querySelector('.section-temporadas').innerHTML = `
 function createCapituloCard(capitulos) {
     return `<div class="capitulos-temp${capitulos.temporada}">
         <h4>Capítulo ${capitulos.numero}:</h4>
-        <h4 class="ms-1 color-red">${capitulos.titulo}</h4>
+        <h4 class="ms-2 color-red">${capitulos.titulo}</h4>
     </div>`
 }
 
