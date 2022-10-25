@@ -1,8 +1,8 @@
-import personagens from "./personagens";
+import {personagens} from './personagens.js';
 
 
-var ID = 4;
-var CONFIRMATION_REMOVE_PERSON = undefined;
+let ID = 4;
+let CONFIRMATION_REMOVE_PERSON = undefined;
 
 function RollPerson() {
     const persons = JSON.parse(localStorage.getItem('dataset-person'));

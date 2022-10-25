@@ -1,4 +1,4 @@
-const personagens = [
+export const personagens = [
     {
         id: 1,
         nome: 'Eleven/Onze',
@@ -104,6 +104,6 @@ const personagens = [
         imagem: './imagens/Personagens/Murray.jpg',
         link:'https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Murray+Bauman&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMibfINSvPqtCSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRay8vqVFRYmVCk6JpbmJeTtYGQFkug8ATwAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAx',
     }
+    
 ]
 
-export default personagens;
