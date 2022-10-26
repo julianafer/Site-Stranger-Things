@@ -483,25 +483,25 @@ footer div .fa-brands:hover {
     }
 }
 
-@media (min-width: 653px) {
+@media (min-width: 678px) {
     .capitulos-temp1 {
         display: flex;
     }
 }
 
-@media (min-width: 713px) {
+@media (min-width: 735px) {
     .capitulos-temp2 {
         display: flex;
     }
 }
 
-@media (min-width: 579px) {
+@media (min-width: 601px) {
     .capitulos-temp3 {
         display: flex;
     }
 }
 
-@media (min-width: 761px) {
+@media (min-width: 784px) {
     .capitulos-temp4 {
         display: flex;
     }

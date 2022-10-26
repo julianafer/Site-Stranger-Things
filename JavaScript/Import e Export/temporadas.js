@@ -1,9 +1,5 @@
 import temporadasSettings from "./model.js";
 
-// function getId(id) {
-//     element.id = idStr;
-// }
-
 const params = new URLSearchParams(window.location.search)
 
 const temporadaId = window.location.href[window.location.href.length-1];
