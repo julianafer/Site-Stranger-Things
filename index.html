@@ -14,8 +14,7 @@
     <script src="JavaScript/mobile-navbar.js" defer></script>
     <script src="JavaScript/Map - Página dinâmica/cards-temporadas.js" defer></script>
     <script src="JavaScript/carrossel.js" defer></script>
-    <script src="./JavaScript/main-personagens.js"></script>
-    <script src="JavaScript/personagens.js"  type="module" defer></script>
+    <script src="JavaScript/main-personagens.js" defer></script>
 </head>
 
 <body class="m-0 p-0">
@@ -120,16 +119,18 @@
             <form id= "form-pesquisa">
             <label for="exampleDataList" class="form-label">Procure pelo seu personagem favorito aqui:</label>
             <div class="submit">
-                <input class="form-control" name = "exampleDataList" list="datalistOptions" id="exampleDataList" placeholder="Pesquise um personagem">
+                <input class="form-control" name = "exampleDataList" list="datalistOptions" id="exampleDataList" placeholder="Pesquise um personagem" autofocus>
                 <!--Fazer uma barra de pesquisa momentanea com botão de remover nos cardes-->
                     <datalist id="datalistOptions">
-                         <option value="Eleven/Onze">
+                         <option value="Eleven / Onze">
                          <option value="Mike">
                          <option value="Will">
-                         <option value="Amapá?! 7w7">
-                         <option value="vish pesquisas huehue">
+                         <option value="Dustin">
+                         <option value="Lucas">
+                         <option value="Max">
+
                     </datalist>
-                    <button type="button" name = "exampleDataList" id="btn-secondary" class="btn btn-danger">Submit</button>
+                    <button type="button" name = "exampleDataList" id="btn-secondary" class="btn btn-danger" onclick="Evento()">Submit</button>
                     </div>
             </div>
             <section id="cards" class="main-sections d-flex text-center flex-row flex-wrap justify-content-around align-content-around pb-0">
@@ -139,7 +140,6 @@
                         <img class="img-personagens" src="./imagens/Personagens/Eleven.jpg">
                         <h3 class="bg-red">Eleven / Onze</h3>
                         <h4 class="bg-red">Millie Bobby Brown</h4>
-                        <button  type= "button" id="id-${person.id}">X</button>
                     </a>
                 </div>
 

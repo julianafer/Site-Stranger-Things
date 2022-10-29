@@ -156,18 +156,21 @@ nav li {
 }
 
 .navigation-auto div {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    background-color: transparent;
-    right: 545px;
-    top: 1410px;
-    border: 2px solid rgb(255, 217, 0);
+    border: 2.5px solid white;
     padding: 7px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+    background-color: transparent;
     
+}
+div.navigation-auto {
+    position: absolute;
+    width: 630px;
+    margin-top: 340.1px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
 }
 
 .navigaton-auto {
@@ -255,6 +258,11 @@ main p {
 
 .img-personagens {
     width: 300px;
+}
+
+/* === Efeito ninja nos personagens === */
+.hidden {
+    display: none;
 }
 
 .div-personagens {
