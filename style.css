@@ -186,7 +186,7 @@ div.navigation-auto {
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-    background-color: #fff;
+    background-color: white;
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
@@ -272,9 +272,17 @@ main p {
     will-change: scale;
 }
 
-.div-personagens:hover {
+.div-personagens:hover, .div-personagens:hover .lixeira {
+    color: black;
     background-color: red;
     transform: scale(1.08);
+}
+
+.lixeira {
+    color: transparent;
+    background-color: transparent;
+    padding: 10px;
+    left: 275px;
 }
 
 .div-personagens:hover h3 {
