@@ -16,6 +16,7 @@
     <script src="JavaScript/Map - Página dinâmica/cards-temporadas.js" defer></script>
     <script src="JavaScript/carrossel.js" defer></script>
     <script src="JavaScript/main-personagens.js" defer></script>
+    <script src="JavaScript/personagens.js" defer></script>
 </head>
 
 <body class="m-0 p-0">
@@ -116,175 +117,12 @@
                         <option value="Max">
                     </datalist>
                     <button type="button" name="exampleDataList" id="btn-secondary" class="btn btn-danger"
-                        onclick="Evento()">Submit</button>
+                        onclick="Evento()">Reverter</button>
                 </div>
                 </div>
                 <section id="cards"
                     class="main-sections d-flex text-center flex-row flex-wrap justify-content-around align-content-around pb-0">
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Onze+(Stranger+Things)&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMLjYtNDRLNteSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaxi_nlVqQoawSVFiXnpqUUKIRmZeenFmjtYGQGRUN0OWAAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAF">
-                            <img class="img-personagens" src="./imagens/Personagens/Eleven.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Eleven / Onze</h3>
-                            <h4 class="bg-red">Millie Bobby Brown</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Mike+Wheeler&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMr6zISEm2KNSSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaw8vpnZqQrhGampOalFO1gZAUZDnvJOAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAP">
-                            <img class="img-personagens" src="./imagens/Personagens/Mike.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Mike Wheeler</h3>
-                            <h4 class="bg-red">Finn Wolfhard</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Will+Byers&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMqjIotCgzT9KSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaxc4Zk5OQpOlUDODlZGAE74h-NMAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAH">
-                            <img class="img-personagens" src="./imagens/Personagens/Will.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Will Byers</h3>
-                            <h4 class="bg-red">Noah Schnapp</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Dustin+Henderson&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzTMMCnMKCwoStOSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRawCLqXFJZl5Ch6peSlAgfy8HayMAB9Aiu9SAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAV">
-                            <img class="img-personagens" src="./imagens/Personagens/Dustin.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Dustin Henderson</h3>
-                            <h4 class="bg-red">Gaten Matarazzo</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Lucas+Sinclair&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMSyszqswxTtKSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRax8PqXJicUKwZl5yTmJmUU7WBkBLJtnG1AAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAd">
-                            <img class="img-personagens" src="./imagens/Personagens/Lucas.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Lucas Sainclair</h3>
-                            <h4 class="bg-red">Caleb McLaughlin</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Max+Mayfield&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMNrUsNqhIy9OSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaw8vokVCr6JlWmZqTkpO1gZAR1DpqlOAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAD">
-                            <img class="img-personagens" src="./imagens/Personagens/Max.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Max Mayfield</h3>
-                            <h4 class="bg-red">Sadie Sink</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Nancy+Wheeler&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzTMiC83jK8sLtSSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRay8fol5yZUK4RmpqTmpRTtYGQGXQhKATwAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAN">
-                            <img class="img-personagens" src="./imagens/Personagens/Nancy.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Nancy Wheeler</h3>
-                            <h4 class="bg-red">Natalia Dyer</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Steve+Harrington&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzTMMCnMKI8vM9OSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRawCwSWpZakKHolFRZl56SX5eTtYGQECO3lXUgAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAJ">
-                            <img class="img-personagens" src="./imagens/Personagens/Steve.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Steve Harrington</h3>
-                            <h4 class="bg-red">Joe Keery</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Robin+Buckley&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMSyszKsstytKSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRay8QflJmXkKTqXJ2TmplTtYGQHDNbkiTwAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAR">
-                            <img class="img-personagens" src="./imagens/Personagens/Robin.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Robin Buckley</h3>
-                            <h4 class="bg-red">Maya Hawke</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Jonathan+Byers&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMqjLIMa_IMNOSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRax8Xvl5iSUZiXkKTpVAgR2sjAApXGyRUAAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAZ">
-                            <img class="img-personagens" src="./imagens/Personagens/Jonathan.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Jonathan Byers</h3>
-                            <h4 class="bg-red">Charlie Heaton</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Erica+Sinclair&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRML84psTTKNtGSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRax8rkWZyYkKwZl5yTmJmUU7WBkBHXdYsFAAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAn">
-                            <img class="img-personagens" src="./imagens/Personagens/Erica.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Erica Sainclair</h3>
-                            <h4 class="bg-red">Priah Ferguson</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=eddie+munson&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzQsqEorzy7MNdCSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaw8qSkpmakKuaV5xfl5O1gZAR2F3ctOAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxA9">
-                            <img class="img-personagens" src="./imagens/Personagens/Eddie.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Eddie Munson</h3>
-                            <h4 class="bg-red">Joseph Quinn</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Jim+Hopper&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMy00zzEnKzdGSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaxcXpm5Ch75BQWpRTtYGQFAwYEcTAAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAX">
-                            <img class="img-personagens" src="./imagens/Personagens/Hopper.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Jim Hopper</h3>
-                            <h4 class="bg-red">David Harbour</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=joyce+byers&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRML84pMUg2N9aSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRazcWfmVyakKSZVA3g5WRgCR3lelTQAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAr">
-                            <img class="img-personagens" src="./imagens/Personagens/Joyce.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Joyce Byers</h3>
-                            <h4 class="bg-red">Winona Ryder</h4>
-                        </a>
-                    </div>
-
-                    <div class="div-personagens">
-                        <a class="position-relative" href="https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Murray+Bauman&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMibfINSvPqtCSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRay8vqVFRYmVCk6JpbmJeTtYGQFkug8ATwAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAx">
-                            <img class="img-personagens" src="./imagens/Personagens/Murray.jpg">
-                            <button class="lixeira p-0 border-0 position-absolute me-3">
-                                <i class="fa-sharp fa-solid fa-trash-can bg-transparent p-1 pb-2 ps-2"></i>
-                            </button>
-                            <h3 class="bg-red">Murray Bauman</h3>
-                            <h4 class="bg-red">Brett Gelman</h4>
-                        </a>
-                    </div>
+                    
                 </section>
         </section>
         <section id="temporadas" class="main-sections pt-0">
