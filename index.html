@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ce231a28c8.js" crossorigin="anonymous"></script>
+
     <script src="JavaScript/mobile-navbar.js" defer></script>
     <script src="JavaScript/Map - Página dinâmica/cards-temporadas.js" defer></script>
     <script src="JavaScript/carrossel.js" defer></script>
     <script src="JavaScript/main-personagens.js" defer></script>
-    <script src="JavaScript/personagens.js" defer></script>
+    <script src="JavaScript/Import e Export/personagens.js" type="module"></script>
 </head>
 
 <body class="m-0 p-0">
@@ -105,8 +107,7 @@
             <form id="form-pesquisa">
                 <label for="exampleDataList" class="form-label">Procure pelo seu personagem favorito aqui:</label>
                 <div class="submit">
-                    <input class="form-control" name="exampleDataList" list="datalistOptions" id="exampleDataList"
-                        placeholder="Pesquise um personagem" autofocus>
+                    <input class="form-control" name="exampleDataList" list="datalistOptions" id="exampleDataList" placeholder="Pesquise um personagem">
                     <!--Fazer uma barra de pesquisa momentanea com botão de remover nos cardes-->
                     <datalist id="datalistOptions">
                         <option value="Eleven / Onze">
@@ -116,19 +117,16 @@
                         <option value="Lucas">
                         <option value="Max">
                     </datalist>
-                    <button type="button" name="exampleDataList" id="btn-secondary" class="btn btn-danger"
-                        onclick="Revert()">Reverter</button>
+                    <button type="button" name="exampleDataList" id="btn-secondary" class="btn btn-danger border-0" onclick="Revert()">Reverter</button>
                 </div>
                 </div>
-                <section id="cards"
-                    class="main-sections d-flex text-center flex-row flex-wrap justify-content-around align-content-around pb-0">
-                    
+                <section id="cards" class="main-sections d-flex text-center flex-row flex-wrap justify-content-around align-content-around pb-0">
+                    <!-- parte do js -->
                 </section>
         </section>
         <section id="temporadas" class="main-sections pt-0">
             <h1 id="h1-temporadas" class="mb-5">Temporadas</h1>
-            <section
-                class="cards-temporadas d-flex text-center flex-row flex-wrap justify-content-around align-content-around">
+            <section class="cards-temporadas d-flex text-center flex-row flex-wrap justify-content-around align-content-around">
                 <!-- parte do js -->
             </section>
         </section>
@@ -143,7 +141,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
