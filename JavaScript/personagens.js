@@ -136,17 +136,8 @@ PersonContainer.innerHTML = PersonContent;
 function Delete(id){
     const element = document.querySelector(`#div-personagens-${id}`)
     element.remove()
-    element.stopPropagation
-
 }
 
-function Evento(){
-    createPerson(personagens)
-    const PersonContent = personagens
-    .map((personagens) => createPerson(personagens))
-    .join('');
-
-    const PersonContainer = document.querySelector('#cards');
-
+function Revert(){
     PersonContainer.innerHTML = PersonContent;
 }
