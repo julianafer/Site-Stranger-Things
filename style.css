@@ -283,6 +283,7 @@ main p {
     background-color: transparent;
     padding: 10px;
     left: 275px;
+    margin-left: 0.49rem;
 }
 
 .div-personagens:hover h3 {
