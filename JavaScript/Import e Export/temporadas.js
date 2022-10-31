@@ -1,7 +1,6 @@
 import temporadasSettings from "./model-temporadas.js";
 
 const temporadaId = window.location.href[window.location.href.length-1];
-console.log() ;
 
 const temporada = temporadasSettings.find((temporada) => temporada.id == temporadaId);
 
