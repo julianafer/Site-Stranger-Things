@@ -20,4 +20,5 @@ inputSearchPerson.addEventListener('input', event => {
       .forEach(todo => {
           todo.classList.remove('hidden')
        })
+    
 })
