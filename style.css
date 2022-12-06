@@ -229,6 +229,14 @@ main p {
     flex-wrap: nowrap;
 }
 
+#pesquisa {
+    width: 70%;
+}
+
+#exampleDataList.form-control {
+    width: 98.8% !important;
+}
+
 .barra-pesquisa{
     display: flex;
     flex-direction: column;
