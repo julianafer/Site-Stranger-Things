@@ -8,24 +8,25 @@ async function search() {
 
     let h5 = document.getElementById('error')
 
-    if (regex.test(inputSearchPerson) === True) {
-        inputSearchPerson.addEventListener('input', event => {
+    inputSearchPerson.addEventListener('input', event => {
+        if (regex.test(inputSearchPerson)) {
             const inputValue = event.target.value.trim().toLowerCase()
             const Cards = Array.from(CardsContainer.children)
-        
+            
             Cards
                 .filter(todo => !todo.textContent.toLowerCase().includes(inputValue))
                 .forEach(todo => {
                     todo.classList.add('hidden')
                 });
             Cards
-              .filter(todo => todo.textContent.toLowerCase().includes(inputValue))
-              .forEach(todo => {
-                  todo.classList.remove('hidden')
-               })
-        })
+                .filter(todo => todo.textContent.toLowerCase().includes(inputValue))
+                .forEach(todo => {
+                    todo.classList.remove('hidden')
+                })
+        }
+        else {
+            error.style.display = 'block'
+        }
     }
-    else {
-        error.style.display = 'block'
-    }
-}
+)}
+search()

@@ -17,7 +17,8 @@
     <script src="JavaScript/mobile-navbar.js" defer></script>
     <script src="JavaScript/Map - Página dinâmica/cards-temporadas.js" defer></script>
     <script src="JavaScript/carrossel.js" defer></script>
-    <script src="JavaScript/teste.js" defer></script>
+    <script src="JavaScript/main-personagens.js" defer></script>
+    <!-- <script src="JavaScript/teste.js" defer></script> -->
     <script src="JavaScript/personagens.js" defer></script>
     <script src="JavaScript/testandoAPI.js" defer></script>
 </head>
@@ -109,7 +110,7 @@
                 <label for="exampleDataList" class="form-label mb-3">Procure pelo seu personagem favorito aqui:</label>
                 <div class="submit d-flex flex-row flex-nowrap align-items-start justify-content-center">
                     <div id="pesquisa">
-                        <input class="form-control" name="exampleDataList" list="datalistOptions" id="exampleDataList" placeholder="Pesquise um personagem">
+                        <input class="form-control" name="exampleDataList" list="datalistOptions" id="exampleDataList" placeholder="Pesquise um personagem" pattern="/^[a-zA-Z]+\s?[a-zA-Z]+\s?[a-zA-z]*$/gm">
                         <!--Fazer uma barra de pesquisa momentanea com botão de remover nos cardes-->
                         <datalist id="datalistOptions">
                             <option value="Eleven / Onze">
@@ -143,6 +144,7 @@
             <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </footer>
+    <!-- <input id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" pattern="/^[a-zA-Z]+\s?[a-zA-Z]+\s?[a-zA-z]*$/gm"> -->
 
 </body>
 
