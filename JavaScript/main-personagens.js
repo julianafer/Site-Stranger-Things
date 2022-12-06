@@ -15,8 +15,8 @@ inputSearchPerson.addEventListener('input', event => {
             todo.classList.add('hidden')
         });
     Cards
-        .filter(todo => todo.textContent.toLowerCase().includes(inputValue))
-        .forEach(todo => {
-            todo.classList.remove('hidden')
-        })
+      .filter(todo => todo.textContent.toLowerCase().includes(inputValue))
+      .forEach(todo => {
+          todo.classList.remove('hidden')
+       })
 })
