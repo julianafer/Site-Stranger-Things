@@ -108,6 +108,12 @@ const personagens = [
         link:'https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Murray+Bauman&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMibfINSvPqtCSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRay8vqVFRYmVCk6JpbmJeTtYGQFkug8ATwAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAx',
     }
 ]
+const Elemente = () => {
+    const url = `https://strangerthings-quotes.vercel.app/api/quotes/100`
+  
+    fetch(url).then(prometi => prometi.json())
+  }
+Elemente()
 
 function createPerson(personagens) {
     return `
@@ -121,6 +127,7 @@ function createPerson(personagens) {
         </button>
         <h3 class="bg-red">${personagens.nome}</h3>
         <h4 class="bg-red">${personagens.ator}</h4>
+        <p>"Frase hiper mega motivacional"</p>
     
     </div>
 </div>`
