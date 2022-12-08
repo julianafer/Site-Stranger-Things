@@ -2,7 +2,7 @@ const personagens = [
     {
         id: 1,
         link: 'https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Onze+(Stranger+Things)&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMLjYtNDRLNteSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaxi_nlVqQoawSVFiXnpqUUKIRmZeenFmjtYGQGRUN0OWAAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAF',
-        nome: 'Eleven/Onze',
+        nome: 'Eleven',
         ator: 'Millie Bobby Brown',
         imagem: './imagens/Personagens/Eleven.jpg',
         link: 'https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Onze+(Stranger+Things)&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMLjYtNDRLNteSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRaxi_nlVqQoawSVFiXnpqUUKIRmZeenFmjtYGQGRUN0OWAAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAF',
@@ -108,14 +108,18 @@ const personagens = [
         link:'https://www.google.com/search?rlz=1C1CHBF_pt-BRBR919BR919&cs=1&sxsrf=ALiCzsZopkh_JtT5CQjX3zBPLJwE-bHOLw:1657500795534&q=Murray+Bauman&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQ2zMkzr1Ti1U_XNzRMibfINSvPqtCSyU620i8pA6L4gqL89KLEXKvkjMSixOSS1KLiRay8vqVFRYmVCk6JpbmJeTtYGQFkug8ATwAAAA&sa=X&ved=2ahUKEwiQgobRz-_4AhXeFbkGHb_OCTIQ9OUBegQIDxAx',
     }
 ]
-const Elemente = () => {
-    const url = `https://strangerthings-quotes.vercel.app/api/quotes/100`
-  
-    fetch(url).then(prometi => prometi.json())
-  }
-Elemente()
 
 function createPerson(personagens) {
+    const Elemente = () => {
+        const url = `https://strangerthings-quotes.vercel.app/api/quotes/100`
+        fetch(url).then(prometi => prometi.json())
+    };
+        const contador = 0
+    while (Elemente.author != personagens.nome){
+        contador +=1
+    }
+    const frase = Elemente.value(contador)
+    
     return `
 <div id="div-personagens-${personagens.id}">
     <div class="div-personagens ${personagens.id}">
@@ -127,7 +131,7 @@ function createPerson(personagens) {
         </button>
         <h3 class="bg-red">${personagens.nome}</h3>
         <h4 class="bg-red">${personagens.ator}</h4>
-        <p>"Frase hiper mega motivacional"</p>
+        <p>"${frase}"</p>
     
     </div>
 </div>`
