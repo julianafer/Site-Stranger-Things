@@ -4,14 +4,18 @@ const Card = document.querySelectorAll('.div-personagens')
 
 // parte do regex //
 
-var padrao = /^[a-zA-Z]+\s?[a-zA-Z]+\s?[a-zA-Z]*$/gm;
 // regex para só aceitar no máximo 3 palavras, sem símbolos especiais
 function validar(input) {
-    if (!padrao.test(input.value)) {
-        input.setCustomValidity('Formato inválido! Tente usar somente letras sem caracteres especiais.');
-    } else {
+    const padrao = /^([a-zA-Z]+ )*[a-zA-Z]+$/gm;
+    
+    const patternCheck = padrao.test(input.value)
+
+    if (patternCheck || input.value === '') {
         input.setCustomValidity('');
+    } else {
+        input.setCustomValidity('Formato inválido! Tente usar somente letras sem caracteres especiais.');
     }
+
     document.getElementById('msg-erro').innerHTML = input.validationMessage;
 }
 

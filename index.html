@@ -110,17 +110,17 @@
                 <div class="submit d-flex flex-row flex-nowrap align-items-start justify-content-center">
                     <div id="pesquisa">
                         <!-- parte do regex -->
-                        <input class="form-control" name="exampleDataList" list="datalistOptions" id="exampleDataList" placeholder="Pesquise um personagem"  onblur="validar(this)">
+                        <input class="form-control" name="exampleDataList" list="datalistOptions" id="exampleDataList" placeholder="Pesquise um personagem"  oninput    ="validar(this)">
                             <div class="mt-2" id="msg-erro" style="color:red;"></div>
                         <!--Fazer uma barra de pesquisa momentanea com botão de remover nos cardes-->
-                        <datalist id="datalistOptions">
+                        <!-- <datalist id="datalistOptions">
                             <option value="Eleven / Onze">
                             <option value="Mike">
                             <option value="Will">
                             <option value="Dustin">
                             <option value="Lucas">
                             <option value="Max">
-                        </datalist>
+                        </datalist> -->
                     </div>
                     <button type="button top-0" name="exampleDataList" id="btn-secondary" class="btn btn-danger border-0" onclick="Revert()">Reverter</button>
                 </div>
