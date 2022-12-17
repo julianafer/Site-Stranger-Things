@@ -109,17 +109,26 @@ const personagens = [
     }
 ]
 
-function createPerson(personagens) {
-    const Elemente = () => {
-        const url = `https://strangerthings-quotes.vercel.app/api/quotes/100`
-        fetch(url).then(prometi => prometi.json())
+//const Elemente = () => {
+ //   const url = `https://strangerthings-quotes.vercel.app/api/quotes/100`
+      
+//  fetch(url).then(prometi => prometi.json()).then((frases) => 
+        //for (frases in len(frases)){
+            //if (frases.author == personagens.ator){ 
+//            const frase = frases.quote
+        //}
+    //})
+//}
+
+function createPerson(personagens, cu) {
+    for (var i = 0 ; cu[i]; i++ ){ 
+        if(cu[i].author == personagens.nome){
+            var frase = cu.quote
+        }
     };
-        const contador = 0
-    while (Elemente.author != personagens.nome){
-        contador +=1
-    }
-    const frase = Elemente.value(contador)
-    
+    //const nome = cu.find(elemento => elemento == personagens.autor);
+    //const frase =nome.quote
+
     return `
 <div id="div-personagens-${personagens.id}">
     <div class="div-personagens ${personagens.id}">
@@ -136,9 +145,12 @@ function createPerson(personagens) {
     </div>
 </div>`
 };
+const url = `https://strangerthings-quotes.vercel.app/api/quotes/100`
+const cu = fetch(url).then((prometi) => prometi.json())
+console.log(cu)
 
 const PersonContent = personagens
-    .map((personagens) => createPerson(personagens))
+    .map((personagens) => createPerson(personagens, cu))
     .join('');
 
 const PersonContainer = document.querySelector('#cards');
